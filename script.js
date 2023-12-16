@@ -171,7 +171,7 @@ btn.style.borderWidth = '6px';
 let para = document.querySelector("p");
 
 // 26 : 01
-// 3:05:50
+// 3:05:00
 
 para.classList.add('newclass');
 // para.classList.remove('newclass');

@@ -65,7 +65,7 @@ button{
     background-color: red;
 } */
 
-.contentBox{
+/* .contentBox{
     height: 100px;
     width: 100px;
     border: 2px solid black;
@@ -107,4 +107,17 @@ footer{
 
 #content{
     height: 692px;
+} */
+
+#box1{
+    height: 100px;
+    width:100px;
+    background-color: green;
+
+}
+
+#box2{
+    height: 100px;
+    width: 30%;
+    background-color: pink;
 }
