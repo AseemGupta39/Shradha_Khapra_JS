@@ -21,9 +21,17 @@ button{
     background-color: dodgerblue;
 } */
 
-.content{
+/* .content{
     color: red;
 }
 .newclass{
     background-color: green;
+} */
+
+div{
+    height: 100px;
+    width: 100px;
+    background-color: dodgerblue;
+    border: 2px solid black;
+    color: wheat;
 }

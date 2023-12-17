@@ -158,20 +158,62 @@
 // div.remove();   
 
 
-let btn = document.createElement('button');
-btn.innerText = "Click me!";
+// let btn = document.createElement('button');
+// btn.innerText = "Click me!";
 
-btn.style.backgroundColor = 'red';
-btn.style.color = 'white';
-document.querySelector('body').prepend(btn);
-btn.style.borderWidth = '6px';
+// btn.style.backgroundColor = 'red';
+// btn.style.color = 'white';
+// document.querySelector('body').prepend(btn);
+// btn.style.borderWidth = '6px';
 
 
 
-let para = document.querySelector("p");
+// let para = document.querySelector("p");
 
-// 26 : 01
-// 3:05:00
+// // 26 : 01
+// // 3:05:00
 
-para.classList.add('newclass');
-// para.classList.remove('newclass');
+// para.classList.add('newclass');
+// para.classList.remove('newclass');/
+
+
+let btn1 = document.querySelector('#btn1');
+
+// btn1.onclick = (evt) => {
+//     console.log(evt);
+//     console.log(evt.type);
+//     console.log(evt.target);
+//     console.log(evt.clientX,evt.clientY);
+
+// }
+
+btn1.addEventListener('click',() => {
+    console.log('button 1 was clicked  by handler 1');
+
+}) 
+
+btn1.addEventListener('click',() => {
+    console.log('button 1 was clicked by handler 2');
+
+}) 
+
+const handler3 = () => {
+    console.log('button 1 was clicked by handler 3');
+};
+
+
+btn1.addEventListener('click',handler3); 
+
+btn1.addEventListener('click',() => {
+    console.log('button 1 was clicked by handler 4');
+
+}) 
+
+btn1.removeEventListener('click',handler3);
+
+
+// let div = document.querySelector('div');
+
+// div.onmouseover = () => {
+//     console.log('inside div');
+// }
