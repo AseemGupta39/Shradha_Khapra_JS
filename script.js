@@ -187,29 +187,29 @@ let btn1 = document.querySelector('#btn1');
 
 // }
 
-btn1.addEventListener('click',() => {
-    console.log('button 1 was clicked  by handler 1');
+// btn1.addEventListener('click',() => {
+//     console.log('button 1 was clicked  by handler 1');
 
-}) 
+// }) 
 
-btn1.addEventListener('click',() => {
-    console.log('button 1 was clicked by handler 2');
+// btn1.addEventListener('click',() => {
+//     console.log('button 1 was clicked by handler 2');
 
-}) 
+// }) 
 
-const handler3 = () => {
-    console.log('button 1 was clicked by handler 3');
-};
+// const handler3 = () => {
+//     console.log('button 1 was clicked by handler 3');
+// };
 
 
-btn1.addEventListener('click',handler3); 
+// btn1.addEventListener('click',handler3); 
 
-btn1.addEventListener('click',() => {
-    console.log('button 1 was clicked by handler 4');
+// btn1.addEventListener('click',() => {
+//     console.log('button 1 was clicked by handler 4');
 
-}) 
+// }) 
 
-btn1.removeEventListener('click',handler3);
+// btn1.removeEventListener('click',handler3);
 
 
 // let div = document.querySelector('div');
@@ -217,3 +217,34 @@ btn1.removeEventListener('click',handler3);
 // div.onmouseover = () => {
 //     console.log('inside div');
 // }
+
+let modeBtn = document.querySelector('#mode');
+let currMode = "light";
+let theme = "white";
+let body = document.querySelector('body');
+
+// modeBtn.addEventListener('click',() => {
+//     modeBtn.innerText = `change to ${currMode} mode`
+//     currMode = currMode === "light"? "dark" : "light";
+//     theme = theme === "white"? "black" : "white";
+//     body.style.backgroundColor = theme;
+//     // console.log(`switching to ${currMode} mode`);
+// })
+
+modeBtn.addEventListener('click',() => {
+    modeBtn.innerText = `change to ${currMode} mode`
+    if(currMode === "light"){
+        currMode = "dark";
+        body.classList.remove("light");
+        body.classList.add("dark");
+    }
+    else{
+        currMode = "light";
+        body.classList.remove("dark");
+        body.classList.add("light");
+    }
+    console.log(currMode);
+    console.log(body.classList);
+
+    // console.log(`switching to ${currMode} mode`);
+})

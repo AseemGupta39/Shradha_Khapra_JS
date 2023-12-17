@@ -10,7 +10,6 @@ button{
     color: white;
 } */
 
-
 /* #box{
     height: 300px;
     width: 300px;
@@ -28,10 +27,20 @@ button{
     background-color: green;
 } */
 
-div{
+/* div{
     height: 100px;
     width: 100px;
     background-color: dodgerblue;
     border: 2px solid black;
     color: wheat;
+} */
+
+.dark {
+  background-color: black;
+  color: white;
+}
+
+.light {
+  background-color: white;
+  color: black;
 }
