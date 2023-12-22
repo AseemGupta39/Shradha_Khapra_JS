@@ -122,7 +122,7 @@ div {
   bottom: 0px;
 } */
 
-body{
+/* body{
     text-align: center;
 }
 
@@ -137,8 +137,21 @@ div{
 #container{
     width: 800px;
     height: 200px;
+    transition-property: all;
+    transition-duration: 2s;
 }
 
-#container:hover{
+    #box1:hover,#box2:hover,#box3:hover,#box4:hover,#box5:hover{
+    transition-duration: 0.2s;
+    font-size: 2em;
+} */
+
+/* #container:hover{
     background-color: aqua;
+    font-size: 1.8em;
 }
+
+#container:active{
+    background-color: red;
+} */
+
